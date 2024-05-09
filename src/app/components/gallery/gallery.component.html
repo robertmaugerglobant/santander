@@ -1,0 +1,14 @@
+<header>
+    <!-- <span>{{ images.length }} records found</span>  -->
+    <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+    <span></span>
+</header>
+
+<main class="cards">
+    <span *ngFor="let image of images | paginate: { itemsPerPage: 10, currentPage: p }">
+        <h5>{{ image.title }}</h5>
+        <a href="{{image.url}}" target="_blank">
+            <img [src]="image.thumbnailUrl" alt="Sample photo">
+        </a>
+    </span>
+</main>

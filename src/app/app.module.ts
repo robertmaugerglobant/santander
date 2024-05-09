@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ImageService } from './services/images.service';
+import { HttpClientModule } from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

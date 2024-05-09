@@ -1,0 +1,38 @@
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  header span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+  }
+  .cards span {
+    height: 15em;
+    margin: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    position: relative;
+    padding: 8px;
+}
+.cards span img{
+    position: absolute;
+    bottom: 3px;
+}
+  
+
+
+
+  
